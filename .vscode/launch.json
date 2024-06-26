@@ -1,0 +1,35 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "nnUnet_Cityscapes20_Conversion",
+            "type": "python",
+            "request": "launch",
+            "program": "nnunetv2/dataset_conversion/Dataset_Cityscapes.py",
+            "console": "integratedTerminal",
+            "env": {
+                "nnUNet_raw":"/Users/poojashetty/Documents/MasterThesis/Code/nnUNet/nnUNet_raw",
+            },
+            "justMyCode": false
+        },
+
+        {
+            "name": "nnUnet_Cityscapes50_Conversion",
+            "type": "python",
+            "request": "launch",
+            "program": "nnunetv2/dataset_conversion/Dataset_Cityscapes.py",
+            "console": "integratedTerminal",
+            "env": {
+                "nnUNet_raw":"/Users/poojashetty/Documents/MasterThesis/Code/nnUNet/nnUNet_raw",
+            },
+            "args": [
+                "train_split_ratio=0.5",
+                "dataset_name=Dataset101_Cityscapes50"
+            ],
+            "justMyCode": false
+        }
+    ]
+}

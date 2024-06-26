@@ -114,3 +114,9 @@ ENV/
 *.model
 
 !documentation/assets/scribble_example.png
+
+.DS_Store
+documentation/.DS_Store
+nnunetv2/dataset_conversion/nnUNet.code-workspace
+nnunetv2/.DS_Store
+outputs/
