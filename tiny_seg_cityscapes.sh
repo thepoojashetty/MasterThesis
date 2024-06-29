@@ -12,4 +12,4 @@ module load python
 conda activate nnunet
 
 export nnUNet_raw="./nnUNet_raw"
-srun python nnunetv2/dataset_conversion/Dataset_Cityscapes.py source="/home/hpc/iwi5/iwi5192h/Dataset/Cityscapes"
+srun python nnunetv2/dataset_conversion/Dataset_Cityscapes.py source="/home/woody/iwi5/iwi5192h/Datasets/Cityscapes"
