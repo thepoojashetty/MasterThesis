@@ -120,3 +120,4 @@ documentation/.DS_Store
 nnunetv2/dataset_conversion/nnUNet.code-workspace
 nnunetv2/.DS_Store
 outputs/
+nnUNet_raw/*
