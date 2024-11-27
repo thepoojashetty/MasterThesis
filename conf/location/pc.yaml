@@ -1,0 +1,9 @@
+msscc:
+  source: MS-SCC
+  annotation_file: "scc-full-res.json"
+  data_split_csv_path: /Users/poojashetty/Documents/MasterThesis/Code/nnUNet/ms_scc
+  data_dir: /Users/poojashetty/Documents/MasterThesis/Dataset
+  root_dir: /Users/poojashetty/Documents/MasterThesis/Code/nnUNet
+
+cityscapes:
+  source: /Users/poojashetty/Documents/MasterThesis/Dataset/cityscapes

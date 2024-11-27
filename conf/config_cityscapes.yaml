@@ -1,0 +1,29 @@
+dataset_name: "Dataset100_Cityscapes" # or "Dataset101_Cityscapes20"
+train_rel_path: "leftImg8bit_trainvaltest/leftImg8bit/train"
+train_foggy_rel_path: "leftImg8bit_trainvaltest_foggy/leftImg8bit_foggy/train"
+train_rainy_rel_path: "leftImg8bit_trainval_rain/leftImg8bit_rain/train"
+val_rel_path: "leftImg8bit_trainvaltest/leftImg8bit/val"
+val_foggy_rel_path: "leftImg8bit_trainvaltest_foggy/leftImg8bit_foggy/val"
+val_rainy_rel_path: "leftImg8bit_trainval_rain/leftImg8bit_rain/val"
+label_rel_path: "gtFine_trainvaltest/gtFine"
+
+train_split_ratio: 1
+val_cities: ["tubingen","strasbourg","monchengladbach"] # remaining 15 cities are used for training
+anno_cities: ["aachen","darmstadt","hamburg","krefeld","stuttgart","ulm","zurich"] #clear images
+unanno_cities: ["weimar","bochum","bremen","cologne","dusseldorf","erfurt","hanover","jena"] #foggy and rainy images
+test_cities: ["frankfurt","lindau","munster"]
+
+valid_classes: [26]
+void_classes: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,27,28,29,30,31,32,33,-1]
+actual_seg_output: null
+predicted_seg_output: null
+test_only: false
+dataset_type: "clear" # "foggy" or "rainy"
+
+defaults:
+  - _self_
+  - location:
+    - pc
+  - nclass:
+    - cityscapes_two
+

@@ -1,0 +1,10 @@
+msscc:
+  source: MS-SCC
+  annotation_file: "scc-full-res.json"
+  data_dir: /home/janus/iwb6-datasets
+  # data_dir: /home/woody/iwi5/iwi5192h/Datasets
+  data_split_csv_path: /home/hpc/iwi5/iwi5192h/nnUNet/ms_scc
+  root_dir: /home/hpc/iwi5/iwi5192h/nnUNet
+
+cityscapes:
+  source: /home/woody/iwi5/iwi5192h/Datasets/cityscapes
